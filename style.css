@@ -1,0 +1,39 @@
+/*
+.container {margin-top: 100px;}
+
+h1,h4 {
+
+    margin: 20px;
+    border: 2px solid green ;
+}
+
+
+div{
+    margin: 100px;
+
+}
+p{
+    margin: 5px;
+}
+.radio-inline{
+    margin-right: 6px;
+    margin-left: 6px;
+    padding: 2px;
+}
+*/
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+a.btn {cursor:pointer;color:#fff!important;}
