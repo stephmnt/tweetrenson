@@ -4,7 +4,7 @@ let citation = document.querySelector('.tweet');
 
 // Elements de langage
 const texte1 = ["Aujourd'hui", "Désormais", "Dès à présent", "Plus que jamais"];
-const texte2 = ["c’est l’esprit de responsabilité qui doit primer", "le temps demande d'être à la hauteur des enjeux", "nous avons tous à saisir l'importance du moment", "nous devons avoir le tempérament adapté"];
+const texte2 = ["c’est l’esprit de responsabilité qui doit primer", "le temps est venu d'être à la hauteur des enjeux", "nous avons tous à saisir l'importance du moment", "nous devons avoir le tempérament adapté"];
 const texte3 = ["pour tous", "pour chacun", "pour le bien commun", "pour la France"];
 const texte4 = ["Il exige", "Il impose", "Il nécessite", "Il implique"];
 const texte5 = ["le rassemblement", "la cohésion", "le sens du sacrifice", "l'esprit républicain"];
