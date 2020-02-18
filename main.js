@@ -35,6 +35,7 @@ function aleatoire(arr) {
     link.setAttribute("class", "twitter-share-button");
     link.setAttribute('id', 'twitter');
     link.setAttribute("data-text", "" + msg + "");
+    link.setAttribute("data-hashtags", "TweetCommeRenson");
     link.setAttribute("data-size", "large");
     tweetDiv.parentNode.replaceChild(link, tweetDiv);
     twttr.widgets.load();
