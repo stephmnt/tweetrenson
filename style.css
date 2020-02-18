@@ -36,4 +36,28 @@ p{
   }
 }
 
-a.btn {cursor:pointer;color:#fff!important;}
+.tweet {
+    color: rgb(28, 32, 34);
+    font: 16px / 1.4 Helvetica, Roboto, "Segoe UI", Calibri, sans-serif;
+	min-height: 200px;
+	margin-top: 13px;
+}
+
+a#generer {
+	color:#fff!important;
+	margin: auto;
+	border-color: rgb(29, 161, 242);
+	border-radius:1rem;
+	font-weight:bold;
+    background-color: rgb(29, 161, 242);
+    min-height: 49px;
+    height: 0px;
+    cursor: pointer;
+}
+a#generer:hover{background-color: rgb(26, 145, 218);}
+
+img.fakeAvatar{width: 36px;border-radius: 50%;}
+.fakeTweet{padding:20px 20px 11.6px}
+.top-10{margin-top:10px;}
+
+.right{float:right;}
