@@ -38,7 +38,7 @@ p{
 
 .tweet {
     color: rgb(28, 32, 34);
-    font: 16px / 1.4 Helvetica, Roboto, "Segoe UI", Calibri, sans-serif;
+    font: normal normal 16px/1.4 Helvetica,Roboto,"Segoe UI",Calibri,sans-serif;
 	min-height: 200px;
 	margin-top: 13px;
 }
@@ -61,3 +61,4 @@ img.fakeAvatar{width: 36px;border-radius: 50%;}
 .top-10{margin-top:10px;}
 
 .right{float:right;}
+.fakeTweetAuthorName{font-weight: 700;font: normal bold 16px/1.4 Helvetica,Roboto,"Segoe UI",Calibri,sans-serif;}
