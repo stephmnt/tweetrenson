@@ -1,5 +1,4 @@
 // Le bouton
-const ba = document.querySelector('#generer');
 var citation = document.querySelector('.tweet');
 
 
@@ -13,19 +12,42 @@ const texte6 = ["de la majorité présidentielle", "du gouvernement", "de ma car
 const texte7 = ["des françaises et des français", "des Parisiens", "des citoyens", "de nos concitoyens", ];
 const texte8 = ["J’y contribuerai", "Je serai présent", "Vous avez mon 06", "Comptez sur moi", "Je serai avec vous", "Vous avez mon engagement"];
 
+  window.onload = function() {
+    document.getElementById("generer").onclick = function() {
+		document.querySelector('#generer');
+		citation.innerHTML = aleatoire(texte1)+ ", " + aleatoire(texte2)+ ", " + aleatoire(texte3)+ ".<br /><br />" + aleatoire(texte4)+ " " + aleatoire(texte5)+ ". <br /><br />C'est l'intérêt " + aleatoire(texte6)+ ", c'est aussi et surtout l'intérêt " + aleatoire(texte7)+ ".<br /><br />" + aleatoire(texte8)+ ".";
+		createButton();
+    }
+  }
+
 
 // Fonction pour choisir un element du tableau de facon aleatoire
 function aleatoire(arr) {
     return arr[Math.floor(Math.random() * arr.length )];
 }
 
-// Actions du bouton
-ba.addEventListener('click', () => {
-	citation.innerHTML = aleatoire(texte1)+ ", " + aleatoire(texte2)+ ", " + aleatoire(texte3)+ ".<br /><br />" + aleatoire(texte4)+ " " + aleatoire(texte5)+ ". <br /><br />C'est l'intérêt " + aleatoire(texte6)+ ", c'est aussi et surtout l'intérêt " + aleatoire(texte7)+ ".<br /><br />" + aleatoire(texte8)+ ".";
+  function createButton() {
+    var msg = citation.innerText;
+    var tweetDiv = document.querySelector(".twitter-share-button");
+    var link = document.createElement("a");
+
+    link.setAttribute("href", "https://twitter.com/share");
+    link.setAttribute("class", "twitter-share-button");
+    link.setAttribute('id', 'twitter');
+    link.setAttribute("data-text", "" + msg + "");
+    link.setAttribute("data-size", "large");
+    tweetDiv.parentNode.replaceChild(link, tweetDiv);
+    twttr.widgets.load();
+  }
 
 
-});
-	// le bouton tweeter
-	var a = citation.innerHTML;
-	document.getElementsByClassName('twitter-share-button')[0].setAttribute("data-text", a);
-
+  ! function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+      js = d.createElement(s);
+      js.id = id;
+      js.src = p + '://platform.twitter.com/widgets.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }
+  }(document, 'script', 'twitter-wjs');
